@@ -1,0 +1,38 @@
+{% extends "!layout.html" %}
+
+{% set render_sidebar = False %}
+
+{%- block header %}
+<div id="header">
+  <a class="title" href="{{ pathto('index') }}">Matthew Laten</a>
+  <ul class="navigation">
+    <li><a href="{{ pathto('CV') }}" title="Curriculm Vitae">cv</a></li>
+    <li><a href="{{ pathto('blog') }}" title="Blog">blog</a></li>
+    <li><a href="{{ pathto('code') }}" title="Code">code</a></li>
+    <li><a href="{{ pathto('misc') }}" title="Miscellaneous">misc</a></li>
+  </ul>
+</div>
+<hr />
+{% endblock %}
+
+{%- block document %}
+{{ super() }}
+{% if 'date' in meta %}
+<p class="publish-date">Published on the {{ meta['date']|format_date }}</p>
+{% endif %}
+{% endblock %}
+
+{# Get rid of some cruft #}
+{%- block relbar1 %}{# { relbar() } #}{% endblock %}
+{%- block sidebar2 %}{# { sidebar() } #}{% endblock %}
+{%- block relbar2 %}{# { relbar() } #}{% endblock %}
+
+{%- block footer %}
+    <hr />
+    <div class="footer">
+      &copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.
+      Many thanks to <a href="http://people.cs.uct.ac.za/~ksmith/">Keegan Carruthers-Smith</a> for this website's source.
+      <a href="http://feeds.feedburner.com/keegancsmith_blog">RSS Feed</a>.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    </div>
+{%- endblock %}

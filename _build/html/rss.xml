@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Matthew Laten's Blog</title><link>http://matt.uctleg.net/blog</link><description>This is an attempt at a programming blog, of sorts... I'll let you know how it goes</description><copyright>2011</copyright><lastBuildDate>Wed, 09 May 2012 10:16:00 -0000</lastBuildDate><item><title>On Renaming</title><link>http://matt.uctleg.net/blog/2012/renaming.html</link><description>&lt;div class=section id=on-renaming&gt;
+&lt;h1&gt;On Renaming&lt;/h1&gt;
+&lt;p&gt;I recently tried to batch rename a bunch of tex files
+using some combination of mv and {}, but alas that
+didn’t work. So a quick google revealed that there is
+a rename command that supports vim/regex-style pattern
+matching and substituition:&lt;/p&gt;
+&lt;div class=highlight-python&gt;&lt;pre&gt;$rename s/[search string]/[replacement string]/ [filenames]&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;So to rename tex and other files that were named Thyla.*
+to Rijndael.* (my 3rd year maths project), I used the
+following command:&lt;/p&gt;
+&lt;div class=highlight-python&gt;&lt;pre&gt;$rename s/Thyla/Rijndael/ Thyla.*&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Wed, 09 May 2012 10:16:00 -0000</pubDate><guid>http://matt.uctleg.net/blog/2012/renaming.html</guid></item><item><title>On Programming Interviews</title><link>http://matt.uctleg.net/blog/2012/programming-interviews.html</link><description>&lt;div class=section id=on-programming-interviews&gt;
+&lt;h1&gt;On Programming Interviews&lt;/h1&gt;
+&lt;p&gt;Right, so &lt;a class="reference external" href=http://breaktherules.co.za/&gt;#breaktherules&lt;/a&gt; is coming up soon, and I seem to be referring a number
+of people for Software Development internships, and rather than explain over and
+over again what types of questions you will encounter, a friend of mine (&lt;a class="reference external" href=https://www.facebook.com/brett.sharwood&gt;Bee&lt;/a&gt;) had
+the idea of putting it in a blog post.&lt;/p&gt;
+&lt;p&gt;But instead of just typing up half-remembered, non-NDA’d questions that have come up
+in programming interviews conducted with me, I will give you links to other blog posts about
+half-remembered, non-NDA’d questions that other people have come across in programming
+interviews; which have subsequently helped me through a few interview processes:
+&lt;a class="reference external" href=http://nimbula.com/company/careers/&gt;Nimbula&lt;/a&gt; (successful), &lt;a class="reference external" href=http://www.google.com/intl/en/jobs/students/tech/&gt;Google&lt;/a&gt; (unsuccessful) and &lt;a class="reference external" href=http://www.amazon.co.za/jobs.htm&gt;Amazon&lt;/a&gt; (successful).&lt;/p&gt;
+&lt;div class=section id=steve-yegge-s-blog-posts&gt;
+&lt;h2&gt;Steve Yegge’s blog posts&lt;/h2&gt;
+&lt;p&gt;Okay, well Steve Yegge’s blog doesn’t exactly fit the description I gave you in the
+previous paragraph; but he is a good place to start. Paraphrasing from wikipedia
+slightly, he is a programmer and blogger known for writing about “programming languages,
+productivity and software culture”. Okay, I lied... That wasn’t paraphrasing; that was
+straight out copy-pasta. But you get my point. Steve has also worked at Amazon and Google
+so I hope you get the feeling that he knows what he is talking about. If not, here are
+two articles I enjoyed of his (which helped me think about programming interviews from
+the interviewer’s perspective), so decide for yourself:&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href=https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions&gt;The Five Essential Phone-Screen Questions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href=https://sites.google.com/site/steveyegge2/what-you-need-to-know&gt;What You Need To Know&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=section id=joel-on-software&gt;
+&lt;h2&gt;Joel on Software&lt;/h2&gt;
+&lt;p&gt;Another big name in programming interviews is that of Joel Spolsky, author of Joel on
+Software. Many of you might know the highly successful programmer question-and-answer
+website he created, Stack Overflow (a website that has come to my rescue many a time
+when learning C++). Below is his guide to interviewing, once again from the interviewer’s
+perspective, for your perusal:&lt;/p&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href=http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html&gt;The Guerrilla Guide to Interviewing (v3.0)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=section id=resources&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;dl class=docutils&gt;
+&lt;dt&gt;&lt;strong&gt;Programming Interviews Exposed - John Mongan &amp;amp; Noah Suojanen:&lt;/strong&gt;&lt;/dt&gt;
+&lt;dd&gt;I cannot stress how much this book helps, especially for last-minute interview preparation.
+It covers a number of good programming question areas and the reasons why interviews
+ask these questions, as well as answers to Software Developement knowledge-based questions.
+It is available &lt;a class="reference external" href=http://www.amazon.com/Programming-Interviews-Exposed-Secrets-Programmer/dp/047012167X&gt;here&lt;/a&gt; for purchase.&lt;/dd&gt;
+&lt;dt&gt;&lt;strong&gt;Wikipedia:&lt;/strong&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;p class=first&gt;Everyone knows Wikipedia, and while it doesn’t stack up for academic writing, it pays to
+glance at certain algorithm’s details before heading into an interview. Look up running
+times for various algorithms; familiarize yourself with pseudocode of popular programming
+challenges. As a rule, before an interview, I take a glance at the space and time complexities
+of some of the major data structures:&lt;/p&gt;
+&lt;blockquote class=last&gt;
+&lt;div&gt;&lt;ul class=simple&gt;
+&lt;li&gt;Array&lt;/li&gt;
+&lt;li&gt;Hash Table&lt;/li&gt;
+&lt;li&gt;Heap&lt;/li&gt;
+&lt;li&gt;Linked List&lt;/li&gt;
+&lt;li&gt;Tree&lt;/li&gt;
+&lt;li&gt;(Priority) Queue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;/dd&gt;
+&lt;dt&gt;&lt;strong&gt;Other programming blogs:&lt;/strong&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;p class=first&gt;Yes, I know this is a cheap one, but the internet is full of people just waiting to tell
+you all about this super weird/difficult/awesome question that they got asked at an
+interview with this super weird/difficult/awesome place to work. A quick Google revealed
+a fair amount of websites containing questions that you can use to practice:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href=http://maxnoy.com/interviews.html&gt;http://maxnoy.com/interviews.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href=http://www.bestcode.com/html/interview_questions.html&gt;http://www.bestcode.com/html/interview_questions.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href=http://www.careercup.com/&gt;http://www.careercup.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href=http://blogs.msdn.com/b/nikhilsi/archive/2011/07/16/programming-interview-questions-and-answers.aspx&gt;http://blogs.msdn.com/b/nikhilsi/archive/2011/07/16/programming-interview-questions-and-answers.aspx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href=http://javarevisited.blogspot.com/2011/06/top-programming-interview-questions.html&gt;http://javarevisited.blogspot.com/2011/06/top-programming-interview-questions.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p class=last&gt;But I am pretty sure that if you are applying for a Software Development position, that
+you are at the very least a rather competent Googler who can find such resources by yourself;
+which brings me to the next resource:&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt&gt;&lt;strong&gt;Google:&lt;/strong&gt;&lt;/dt&gt;
+&lt;dd&gt;Yes, this might be an obvious one, but I will mention it nonetheless. The next time you
+think of an interesting problem, and wonder whether there is a solution for it, try
+and work one out. But if you feel that you are on the point of giving up, look it up!
+Don’t just leave it to the abyss that is unsolved problems in your mind. The same goes
+for little “non-essential” facts about computing. If you are puzzling over the mechanics
+of Java’s memory management model or wondering how a 4-way handshake in TCP works, do
+a bit of research. This information that you gain along the way might not get you that
+onsite interview with that company that you wish to work at, but someone who can comment
+on the inner workings of a language, protocol or system in Computer Science will definitely
+make a better impression than someone who cannot.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;div class=section id=matt-s-advice-on-programming-interviews&gt;
+&lt;h2&gt;Matt’s Advice on Programming Interviews&lt;/h2&gt;
+&lt;p&gt;Since I thought it would be rude of me to leave you with a bunch of resources, saying
+“LOL! Go Study!”, here are a few pointers (no, not a C++ joke).&lt;/p&gt;
+&lt;p&gt;Firstly, and this is in no apparent order, remember that your interviewer is a human,
+just like you. He or she cannot read your mind, so &lt;em&gt;talk!&lt;/em&gt; If you come out of an
+interview, and you don’t need a throat lozenge, then you haven’t been talking enough.
+When given a problem, do not just stare at it without saying anything. Now, I know
+that this might be difficult, especially if you are not comfortable thinking out loud
+in front of people, but look at it this way: If you are not talking, your interviewer
+doesn’t know whether you are designing a brilliant solution, or just plain stumped.
+So do both yourself and your interviewer a favour and remove that doubt for him or her.
+Further on the point of talking, an interviewer who is conversing with you is usually
+happier to give you a push in the right direction, or help you remember the syntax for
+an obscure command, because he or she can see your thought pattern, and realise that
+you are a good coder.&lt;/p&gt;
+&lt;p&gt;So what is the general strategy for talking when confronted with a difficult problem?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Coding problems:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Usually start with the words “I want you to design and code a method to X” where X
+can be anything from reversing a string or finding the nth factorial or Fibonacci
+number to merging two heaps or converting ASCII to integers.&lt;/p&gt;
+&lt;p&gt;Now take care, remember that the interviewer asked you to &lt;em&gt;design&lt;/em&gt; and code a method,
+or if he or she didn’t, that is what they meant. If you had the option of hiring someone
+who would always start coding on projects without giving any proper thought or design
+to it, would you? This code is the only code that your interviewer sees you write,
+so if it is messy or poorly designed, they will assume you always write messy or poorly
+designed code. Don’t let them!&lt;/p&gt;
+&lt;p&gt;Thus, a few basic steps can be followed&lt;/p&gt;
+&lt;ol class=arabic&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Examine a trivial test case:&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;This will give you a sense of the problem, as well as get those creative programming
+juices flowing. Plus, this buys you some time to think about the problem and a good
+solution. At this stage, you should be working through it with the interviewer. Explain
+to him or her what you are doing or thinking at each stage. Usually coding problems
+are relatively easy to solve by hand on a trivial test case, but working through
+a simple example might arm you with a general strategy for attacking this problem.
+What you can say to the interviewer: “I like working through a test case first, as
+this allows me to get a general sense of the problem. Do you mind if I tell you how
+I would solve this problem for this simple test case?” Usually they will oblige and
+you can step through the problem set, like a debugger would. Next, you would want to...&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Think of a solution&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;It doesn’t have to be a perfect, or even optimal solution, just a solution. This will
+show your interviewer that you can at least solve the problem, albeit inefficiently.
+Once again, this gives you the time you need to come up with a better solution. Usually
+you will follow the discussion of the test case with, “Immediately, the naive/simple
+way of doing this pops to mind, namely that you would X.” In the case of searching for
+an element in a sorted list, X would be comparing the search key to each element sequentially.
+At this stage, you should already be thinking of the limitations of your current solution
+and communicate them to the interviewer, so you can...&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Optimize, or think of a better solution&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;If you happened to think of the optimal solution first, such as binary search on a list
+of ordered elements, this is your chance to make adjustments for the specific problem
+you have been tasked with solving. Most problems will feature some sort of spin on a
+generic algorithm, or require some language-specific feature, after which the problem
+becomes trivial to solve. At this stage, you should be on the look out for these twists.
+However, sometimes at this stage, you realise that your solution left a lot to be
+desired. When this happens, bow out gracefully. Tell your interviewer that the solution
+wouldn’t work because of XYZ. Give the reason, so that your interviewer knows that you
+know why it wouldn’t work. Sometimes, your original solution can be cannabalized, and
+reformed into a new solution, but often you have to think of the problem from a
+different angle. Return to your basic data structures and algorithms, and think about
+specific properties of this problem. Do you need instant access to elements? Think
+Hash Tables. Can this problem be split up into smaller sub-problems? Think DP or Recursion.
+Do you need to eliminate large parts of your data first? Think decrease-and-conquer.
+Identify what makes this problem difficult, and draw similarities from that to data structures
+and algorithms that you know. However, if you are truly stumped, or have hit a blank, rather
+communicate this to the interviewer, and they will likely give you a hint of sorts to get
+you going. All of this is so that you can progress to the next step, namely...&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Write your code&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;As was mentioned in the previous step, problems might require language-specific features.
+Thus, if you have a choice of language, choose the intersection languages you are comfortable
+with and languages that would make it easy to implement your solution. If you half-remember
+some obscure function in Haskell that you could use to tackle the problem, don’t use it.
+Stick to relatively mainstream languages, which you will have hopefully been coding for some
+time already. These mainstream languages are what an interviewer is usually wanting you to
+demonstrate proficiency in. You should have thought about the problem/your solution enough
+at the previous step to code it up fairly simply - whether on a white board, or on a shared
+document. If you get stuck on implementing the solution - for example, perhaps you have
+forgetten a certain function name or argument list - then don’t stare blankly at the board
+/shared document. Tell the interviewer that you think the function name is X, but ask whether
+you can continue using X as the function name? Most times they will oblige if you can explain
+what the function you are using does. A central theme that should be surfacing as you read is
+that you should constantly be communicating with your interviewer, especially in this coding
+section. Why are you writing the code in that way? Can you explain this section of code? You
+should hear these questions being asked, even if the interviewer is not saying a word. Now,
+once you are finally done with your &lt;em&gt;first&lt;/em&gt; iteration of the code, it is time to...&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Bug-check&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;Not much to explain here, except that you should at least read through your code now to catch
+any obvious bugs. Is that comparisson supposed to be less than, or greater than? Have you
+null terminated your strings in C? Do you free up unused memory, and allocate enough memory
+to start with when writing in C++? You pretty much get the kinds of questions you need to be
+asking yourselves, right? Naturally, check your syntax for errors, add your semi-colons in
+Java and C/C++, and scan over your code for illegal statements. This should be a fairly fast
+process, in which you glance over your code as well as...&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Run through your code with the test example&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;This is important! Make sure your code actually works! Use the simple test case from before,
+and explain what happens to the test data to the interviewer. Yes, sometimes they can see
+that what you have coded works, and will ask you to move on; but if there are errors in your
+logic that you have not caught up until now, this step will help you identify them. Also,
+just asking your interviewer whether you can run through the code with an example before
+telling him that you are done is an indicator that you test your work before shipping it -
+a quality most interviewers are on the look-out for. Next up, you should...&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Run through edge cases&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;Think about what happens when your string manipulation function gets given an empty string,
+or your massive_calculation(int i) is called with 0, or negatives, or other data that we
+seem to forget under pressure. Often there is a simple fix, but show that you are aware
+that your code won’t always be running in places where the happy bushes grow and the sun
+is always shining. Don’t forget your edge cases! And finally...&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Only now do you present.&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;I lied! You should be presenting throughout the solving/coding process (obviously not if this is
+a phone screen and they have put you on hold to give you time to code the problem - in which
+case, summarize the previous points mentioned when asked to explain your code). However, this
+is the opportunity to discuss final thoughts on your solution, including where it is limited,
+or where it can be improved. Be humble, recognize that your code can probably be optimized in
+a few ways, discuss why you implemented it in this way instead of that... In other words, show
+that what you just did was not by some feat of conjuring, but rather that you knew what you were
+doing.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In fact, the interviewer is trying to gather whether you can actually code or not. Your CV says
+you can, but many a good CV is a stretch too far from the truth. Thus, points that they
+will be looking for include coding fluency, design and analysis of problems and familiarity
+with popular programming languages (C/C++, Java and sometimes Python). Address the points above,
+and you will likely not go wrong. Bear in mind though, that the points listed here are not an
+exhaustive list of everything you will need to do in a coding problem. Certain problems require
+you to think outside the box, or even on your feet, so do not be alarmed if your interviewer
+raises a point not mentioned here. Do however feel free to skip some steps if your interviewer
+so desires (don’t insist in explaining your code if the interviewer communicates that they are
+satisfied).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Algorithmic Problems:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Usually start with the words: “Given X, how would you Y” where X is the
+initial conditions or constraints to a problem and Y is the problem itself.&lt;/p&gt;
+&lt;ol class=arabic&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Think of the naive solution.&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;This should be relatively simple to come up with, so you should actually be thinking
+about this as soon as you hear the problem. Start by thinking about the problem
+in its most basic form. Do you need to broadcast a message to 10 000 000 nodes?
+How would you broadcast it to 10? Do you need to tile an infinite grid with a certain
+shape? How would you tile a 10x10 grid?&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Identify constraints in naive solution&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;Gives you clues to what they are wanting.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Think of a semi-optimal solution&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first last"&gt;Now an optimal solution should not be too far away. If not, revisit simple cases.
+See by interviewer’s demeanour whether you are on the right track.&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class=first&gt;Test whether your solution works “edge cases”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class=first&gt;Refine solution, discuss limitations/drawbacks&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;MORE TO COME&lt;/p&gt;
+&lt;p&gt;In both classes of problems, make sure that you ask for clarification if anything is
+unclear. Sometimes the solution to a problem lies in the fact that the problem is
+difficult to solve in general, but easy to solve for some simplifying assumption.
+However, never make that assumption without telling or asking your interviewer. This
+is generally considered to be bad practice, and can result in the interviewer swaying
+his or her decision from a “yes”, to a “no”.&lt;/p&gt;
+&lt;p&gt;If you ramble on about something off topic, he or she might get bored.
+Answer the questions to the best of your ability, but don’t waffle.&lt;/p&gt;
+&lt;p&gt;Remember, in the case of the blog posts from the interviewer’s perspective, there is a
+likely-hood that your interviewer has read these blog posts for advice on interviewing.
+So read through them. Try an picture yourself getting interviewed by Steve Yegge or
+Joel Spolsky. What would you answer to the questions that they suggest? This blog post
+will only really help you if you go through the material, and put yourself in this&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=section id=final-thoughts&gt;
+&lt;h2&gt;Final Thoughts&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Tue, 01 May 2012 18:31:00 -0000</pubDate><guid>http://matt.uctleg.net/blog/2012/programming-interviews.html</guid></item><item><title>On Programming Interviews</title><link>http://matt.uctleg.net/blog/2012/programming-interviews.html</link><description>&lt;div class=section id=on-programming-interviews&gt;
+&lt;h1&gt;On Programming Interviews&lt;/h1&gt;
+&lt;p&gt;Right, so &lt;a class="reference external" href=http://breaktherules.co.za/&gt;#breaktherules&lt;/a&gt; is coming up soon, and I seem to be referring a number
+of people for Software Development internships, and rather than explain over and
+over again what types of questions you will encounter, Bee had the idea of putting
+it in a blog post.&lt;/p&gt;
+&lt;p&gt;But instead of just typing up half-remembered, non-NDA’d questions that have come up
+in programming interviews conducted with me, I will give you links to other blog posts about
+half-remembered, non-NDA’d questions that other people have come across in programming
+interviews; which have subsequently helped me through a few interview processes:
+&lt;a class="reference external" href=http://nimbula.com/company/careers/&gt;Nimbula&lt;/a&gt; (successful), &lt;a class="reference external" href=http://www.google.com/intl/en/jobs/students/tech/&gt;Google&lt;/a&gt; (unsuccessful) and &lt;a class="reference external" href=http://www.amazon.co.za/jobs.htm&gt;Amazon&lt;/a&gt; (successful).&lt;/p&gt;
+&lt;div class=section id=steve-yegg-s-blog-posts&gt;
+&lt;h2&gt;Steve Yegg’s blog posts&lt;/h2&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;&lt;a class="reference external" href=https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions&gt;The Five Essential Phone-Screen Questions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Mon, 12 Mar 2012 18:53:00 -0000</pubDate><guid>http://matt.uctleg.net/blog/2012/programming-interviews.html</guid></item><item><title>On Brightness</title><link>http://matt.uctleg.net/blog/2012/brightness.html</link><description>&lt;div class=section id=on-brightness&gt;
+&lt;h1&gt;On Brightness&lt;/h1&gt;
+&lt;p&gt;So I’ve had this problem with my Ubuntu install (12.04) on laptop
+for a while: the brightness controls (using the Function keys) do
+not work. Finally, since I have a splitting headache now and a
+bright screen is not helping, I decided to fix this. A quick Google
+revealed that the problem lies with my Nvidia graphics card not
+allowing brightness by harware control by default in the xorg config,
+which is easily fixed with a single line.&lt;/p&gt;
+&lt;p&gt;So here it goes:&lt;/p&gt;
+&lt;ol class=arabic&gt;
+&lt;li&gt;&lt;p class=first&gt;Open up xorg config in your favourite text editor:&lt;/p&gt;
+&lt;div class=highlight-python&gt;&lt;pre&gt;$sudo vi /etc/X11/xorg.conf&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class=first&gt;Add this line to the section labeled ‘Device’:&lt;/p&gt;
+&lt;div class=highlight-python&gt;&lt;pre&gt;Option "RegistryDwords" "EnableBrightnessControl=1"&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class=first&gt;Log out and back in again, and you should be able to set screen brightness using your Function keys&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description><pubDate>Mon, 12 Mar 2012 18:53:00 -0000</pubDate><guid>http://matt.uctleg.net/blog/2012/brightness.html</guid></item><item><title>On the Beginning</title><link>http://matt.uctleg.net/blog/2012/beginning.html</link><description>&lt;div class=section id=on-the-beginning&gt;
+&lt;h1&gt;On the Beginning&lt;/h1&gt;
+&lt;p&gt;So if my post on first posts could be considered an abstract, this is
+now my introduction. Well, perhaps your introdution: to Linux and all
+things nerdy!&lt;/p&gt;
+&lt;p&gt;As already stated, this blog is a work in progress, with some posts
+being more formal and some just splashes of nerdy Matt as he geeks out
+over certain technologies. What this means however, is that I do expect
+anyone reading this to have a familiarity with terminal and some variant
+of Linux (Windows users move along). But for those that don’t, this
+beginning post should be enough to get you familiar with the basics of
+Terminal usage etc. Hopefully you have at least already installed Ubuntu...&lt;/p&gt;
+&lt;p&gt;So popular terminal commands (in the form “$[command] [arguments] //Explanation”):&lt;/p&gt;
+&lt;div class=highlight-python&gt;&lt;pre&gt;$apt-get install [package] //install a package in Ubuntu. Requires sudo.
+
+$apt-get remove [package] //uninstall a package in Ubuntu. Requires sudo.
+
+$chgrp [groupname] [filename] //change group ownership of file
+
+$chmod [permissions] [filename] //change permissions on file, where permissions
+                                //are given by octal values. Google it.
+
+$chown [user] [file] //change user ownership of file
+
+$cp [source] [destination] //make a copy of source file at destination
+
+$find [location] [expression] //search for files in location matching expression
+
+$grep [options] [pattern] //regular expressions used to search through files
+
+$mv [source] [destination] //move source file to destination
+
+$mtr [hostname] //basically this is ping and traceroute combined
+
+$ping [hostname] //send out icmp packets to a network destination
+
+$touch [filename] //create a zero-length file
+
+$traceroute [hostname] //trace the network path of a packet to hostname
+
+$sudo [command] //execute command with administrator rights&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;These can all be entered into a terminal opened up by pressing Ctrl-Alt-T
+in Ubuntu distributions.&lt;/p&gt;
+&lt;p&gt;This is by no means a complete list, and I am in the process of updating it;
+but it might serve as a starting point to becoming more familiar with using
+the terminal.&lt;/p&gt;
+&lt;p&gt;More to follow later =)&lt;/p&gt;
+&lt;/div&gt;
+</description><pubDate>Wed, 29 Feb 2012 18:53:00 -0000</pubDate><guid>http://matt.uctleg.net/blog/2012/beginning.html</guid></item><item><title>On First Posts</title><link>http://matt.uctleg.net/blog/2012/first-post.html</link><description>&lt;div class=section id=on-first-posts&gt;
+&lt;h1&gt;On First Posts&lt;/h1&gt;
+&lt;p&gt;So I have been thinking for sometime what constitutes a good first
+post for a blog, and I am nowhere further than I was about a month ago...
+And yes, I am back-dating this post...&lt;/p&gt;
+&lt;p&gt;With that in mind:&lt;/p&gt;
+&lt;p&gt;FIRST POST!&lt;/p&gt;
+&lt;p&gt;Sorry, I had to. Well, more like really wanted to. But I sidetrack myself.
+Yes, first posts. I’m trying to give you an insight into my mind, so don’t
+rush me!&lt;/p&gt;
+&lt;p&gt;Let me start off by saying that I tried doing the whole personal blog - these
+are my feelings I am blasting out on to the internets - thing and I lost interest.
+Maybe I am just not interesting enough? Cue philosophical soliloquy. But what
+I do find interesting, are computers - from programming tips and tricks to algorithms,
+but especially tinkering with little bits of software to create the perfect setup
+for me...&lt;/p&gt;
+&lt;p&gt;Along the way however, I will pick up little bits and pieces that I feel could be
+shared with the world, and that is what this blog will consist of: 90% geek with
+a splash of Matt (sense any redundancy here?). So some posts will take the form
+of a how-to, which might be more formal (can’t promise anything). Others might
+comment on the current technological world, or why I think technology X is better
+than Y. One thing that I can guarentee is that each post will have my views &lt;em&gt;on&lt;/em&gt;
+the matter, so they will all be of the form “On X” where X is the topic..&lt;/p&gt;
+&lt;p&gt;Alright, now that I have introduced this blog, I probably have to introduce myself.
+If you have taking a look around the rest of the website, you might notice that I
+am studying Computer Science and Maths. You can find my CV around here somewhere too.
+Most of all, I have an interest in solving problems. Not necessarily always the
+algorithmic or mathematical kind, but usually more centred around implementations
+and getting various pieces of tech to play nicely with one another. Thus, Linux
+is naturally my choice operating system...&lt;/p&gt;
+&lt;p&gt;Which brings me to my nerd cred - Computer Specs:&lt;/p&gt;
+&lt;div class=section id=hardware-toshiba-c660-1q9-laptop&gt;
+&lt;h2&gt;Hardware (Toshiba C660-1Q9 Laptop):&lt;/h2&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;Intel Core i5 2410M Sandybridge Processor (2 cores @ 2.3GHz)&lt;/li&gt;
+&lt;li&gt;4GB RAM&lt;/li&gt;
+&lt;li&gt;Nvidia GeForce 315M Graphics Card&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=section id=software-preferences&gt;
+&lt;h2&gt;Software Preferences:&lt;/h2&gt;
+&lt;ul class=simple&gt;
+&lt;li&gt;Ubuntu Linux 12.04 OS&lt;/li&gt;
+&lt;li&gt;Gnome 3 Shell Desktop Environment&lt;/li&gt;
+&lt;li&gt;zsh Login Shell&lt;/li&gt;
+&lt;li&gt;vi(m) Text Editor&lt;/li&gt;
+&lt;li&gt;Chromium Browser&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And I think that that is as good a place to end as any. This post will probably be
+updated when I get bored of it. I will perhaps even add some links to my vimrc and
+other things eventually, but for the moment, I approve this post. This is Matthew
+Laten, reporting live from the INTERNET, on First Posts! Hope you enjoyed the read...&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description><pubDate>Wed, 01 Feb 2012 13:00:00 -0000</pubDate><guid>http://matt.uctleg.net/blog/2012/first-post.html</guid></item></channel></rss>
