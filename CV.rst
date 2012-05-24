@@ -4,7 +4,7 @@
  Curriculum Vitae
 ==================
 
-My CV in pdf format is available for download `here <http://matt.uctleg.net/matthew-laten-cv.pdf>`_.
+If you are interested in a pdf format version of my CV, please drop me an email.
 
 :Full Name: Matthew Laten
 :Contact: matt.laten@gmail.com
